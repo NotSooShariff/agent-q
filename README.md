@@ -2,7 +2,7 @@
 
 > Professional AI Agent Management via Model Context Protocol (MCP)
 
-[![npm version](https://badge.fury.io/js/%40agent-q%2Fmcp.svg)](https://www.npmjs.com/package/@agent-q/mcp)
+[![npm version](https://badge.fury.io/js/%40notsooshariff%2Fagent-q.svg)](https://www.npmjs.com/package/@notsooshariff/agent-q)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 
@@ -25,10 +25,10 @@ Agent Q is a Model Context Protocol (MCP) server that enables you to create, man
 
 ```bash
 # Using npx (recommended)
-npx @agent-q/mcp
+npx @notsooshariff/agent-q
 
 # Or install globally
-npm install -g @agent-q/mcp
+npm install -g @notsooshariff/agent-q
 ```
 
 ### Configuration
@@ -41,7 +41,7 @@ Add Agent Q to your MCP-compatible AI tool:
   "mcpServers": {
     "agent-q": {
       "command": "npx",
-      "args": ["-y", "@agent-q/mcp"]
+      "args": ["-y", "@notsooshariff/agent-q"]
     }
   }
 }
@@ -66,7 +66,7 @@ Add the standard config above.
 Use the CLI to add Agent Q:
 
 ```bash
-claude mcp add agent-q npx @agent-q/mcp
+claude mcp add agent-q npx @notsooshariff/agent-q
 ```
 
 Or manually edit `~/.claude/config.json` with the standard config.
@@ -79,7 +79,7 @@ Or manually edit `~/.claude/config.json` with the standard config.
 Install via VS Code CLI:
 
 ```bash
-code --add-mcp '{"name":"agent-q","command":"npx","args":["-y","@agent-q/mcp"]}'
+code --add-mcp '{"name":"agent-q","command":"npx","args":["-y","@notsooshariff/agent-q"]}'
 ```
 
 Or follow the MCP install guide and use the standard config.
@@ -91,7 +91,7 @@ Or follow the MCP install guide and use the standard config.
 
 1. Go to Cursor Settings → MCP → Add new MCP Server
 2. Name: `agent-q`
-3. Command type with: `npx @agent-q/mcp`
+3. Command type with: `npx @notsooshariff/agent-q`
 4. Click "Add"
 
 </details>
@@ -105,14 +105,14 @@ Update your `settings.json`:
 "amp.mcpServers": {
   "agent-q": {
     "command": "npx",
-    "args": ["-y", "@agent-q/mcp"]
+    "args": ["-y", "@notsooshariff/agent-q"]
   }
 }
 ```
 
 Or use the CLI:
 ```bash
-amp mcp add agent-q -- npx @agent-q/mcp
+amp mcp add agent-q -- npx @notsooshariff/agent-q
 ```
 
 </details>
@@ -123,7 +123,7 @@ amp mcp add agent-q -- npx @agent-q/mcp
 1. Go to Advanced settings → Extensions → Add custom extension
 2. Name: `agent-q`
 3. Type: STDIO
-4. Command: `npx @agent-q/mcp`
+4. Command: `npx @notsooshariff/agent-q`
 5. Click "Add Extension"
 
 </details>
@@ -133,14 +133,14 @@ amp mcp add agent-q -- npx @agent-q/mcp
 
 Use the CLI:
 ```bash
-codex mcp add agent-q npx "@agent-q/mcp"
+codex mcp add agent-q npx "@notsooshariff/agent-q"
 ```
 
 Or edit `~/.codex/config.toml`:
 ```toml
 [mcp_servers.agent-q]
 command = "npx"
-args = ["-y", "@agent-q/mcp"]
+args = ["-y", "@notsooshariff/agent-q"]
 ```
 
 </details>
@@ -150,7 +150,7 @@ args = ["-y", "@agent-q/mcp"]
 
 Use the CLI:
 ```bash
-droid mcp add agent-q "npx @agent-q/mcp"
+droid mcp add agent-q "npx @notsooshariff/agent-q"
 ```
 
 Or type `/mcp` within Factory droid for the interactive UI.
@@ -166,7 +166,7 @@ Edit `.kiro/settings/mcp.json`:
   "mcpServers": {
     "agent-q": {
       "command": "npx",
-      "args": ["-y", "@agent-q/mcp"]
+      "args": ["-y", "@notsooshariff/agent-q"]
     }
   }
 }
@@ -184,7 +184,7 @@ Edit `~/.config/opencode/opencode.json`:
   "mcp": {
     "agent-q": {
       "type": "local",
-      "command": ["npx", "@agent-q/mcp"],
+      "command": ["npx", "@notsooshariff/agent-q"],
       "enabled": true
     }
   }
@@ -416,5 +416,5 @@ Built with:
 **Ready to supercharge your AI workflows?** Install Agent Q today!
 
 ```bash
-npx @agent-q/mcp
+npx @notsooshariff/agent-q
 ```

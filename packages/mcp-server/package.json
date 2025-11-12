@@ -1,12 +1,12 @@
 {
-  "name": "@agent-q/mcp",
+  "name": "@notsooshariff/agent-q",
   "version": "0.1.0",
   "description": "MCP server for Agent Q - AI Agent Template Manager",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "agent-q-mcp": "./dist/index.js"
+    "agent-q": "./dist/index.js"
   },
   "scripts": {
     "build": "tsc",
