@@ -1,0 +1,22 @@
+{
+  "name": "@agent-q/plugin",
+  "version": "0.1.0",
+  "description": "Claude Code plugin for Agent Q",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Plugin ready - files are already in place'",
+    "clean": "echo 'Nothing to clean'"
+  },
+  "files": [
+    "plugin.json",
+    "agents/**",
+    "README.md"
+  ],
+  "keywords": [
+    "claude-code-plugin",
+    "agent-q",
+    "mcp"
+  ],
+  "author": "Agent Q Team",
+  "license": "MIT"
+}

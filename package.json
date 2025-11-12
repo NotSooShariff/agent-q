@@ -1,0 +1,51 @@
+{
+  "name": "agent-q",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Professional AI Agent Management via Model Context Protocol",
+  "author": "Agent Q Team",
+  "license": "MIT",
+  "packageManager": "pnpm@9.4.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.3.3",
+    "prettier": "^3.2.4",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "agents",
+    "ai",
+    "llm",
+    "template-manager"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NotSooShariff/agent-q.git"
+  }
+}
