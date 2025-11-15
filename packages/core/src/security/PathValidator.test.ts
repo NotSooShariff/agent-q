@@ -2,6 +2,8 @@
  * PathValidator tests
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument */
+
 import { PathValidator } from './PathValidator';
 import { SecurityError } from '../errors/index';
 

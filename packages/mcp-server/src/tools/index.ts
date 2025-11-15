@@ -22,7 +22,7 @@ import { searchTemplatesTool, SEARCH_TEMPLATES_SCHEMA } from './searchTemplates.
  */
 export function setupTools(server: Server, agentManager: AgentManager): void {
   // Register tool list handler
-  server.setRequestHandler(ListToolsRequestSchema, async () => {
+  server.setRequestHandler(ListToolsRequestSchema, () => {
     return {
       tools: [
         CREATE_AGENT_SCHEMA,

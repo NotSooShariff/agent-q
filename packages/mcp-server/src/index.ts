@@ -35,12 +35,12 @@ async function main(): Promise<void> {
   setupTools(server, agentManager);
 
   // Handle errors
-  server.onerror = (error) => {
+  server.onerror = (error): void => {
     console.error('[MCP Error]', error);
   };
 
-  process.on('SIGINT', async () => {
-    await server.close();
+  process.on('SIGINT', (): void => {
+    void server.close();
     process.exit(0);
   });
 

@@ -2,6 +2,8 @@
  * AgentValidator tests
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-assignment */
+
 import { AgentValidator } from './AgentValidator';
 import type { AgentConfig } from '../types/index';
 

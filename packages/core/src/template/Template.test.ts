@@ -2,6 +2,8 @@
  * Template utility tests
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-assignment */
+
 import {
   applyTemplateVariables,
   validateTemplateVariables,

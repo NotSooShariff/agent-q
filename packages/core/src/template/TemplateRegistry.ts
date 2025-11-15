@@ -17,19 +17,19 @@ export class TemplateRegistry {
    * Search for templates
    * TODO: Implement actual registry API calls
    */
-  async search(_query: SearchQuery): Promise<Template[]> {
+  search(_query: SearchQuery): Promise<Template[]> {
     // For now, return empty array (will implement in Phase 3)
     console.warn('Template registry not yet implemented');
-    return [];
+    return Promise.resolve([]);
   }
 
   /**
    * Get a specific template by ID
    * TODO: Implement actual registry API calls
    */
-  async get(templateId: string): Promise<Template> {
+  get(templateId: string): Promise<Template> {
     // Stub implementation
-    throw new TemplateNotFoundError(templateId);
+    return Promise.reject(new TemplateNotFoundError(templateId));
   }
 
   /**
@@ -48,17 +48,17 @@ export class TemplateRegistry {
    * List featured templates
    * TODO: Implement actual registry API calls
    */
-  async listFeatured(): Promise<Template[]> {
+  listFeatured(): Promise<Template[]> {
     console.warn('Template registry not yet implemented');
-    return [];
+    return Promise.resolve([]);
   }
 
   /**
    * List templates by category
    * TODO: Implement actual registry API calls
    */
-  async listByCategory(_category: string): Promise<Template[]> {
+  listByCategory(_category: string): Promise<Template[]> {
     console.warn('Template registry not yet implemented');
-    return [];
+    return Promise.resolve([]);
   }
 }

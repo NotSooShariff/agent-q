@@ -38,6 +38,7 @@ export class ContentSanitizer {
     }
 
     // Remove control characters except newlines and tabs
+    // eslint-disable-next-line no-control-regex
     const sanitized = trimmed.replace(/[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F]/g, '');
 
     return sanitized;
@@ -68,6 +69,7 @@ export class ContentSanitizer {
     }
 
     // Remove control characters except newlines and tabs
+    // eslint-disable-next-line no-control-regex
     const sanitized = trimmed.replace(/[\x00-\x08\x0B-\x0C\x0E-\x1F\x7F]/g, '');
 
     return sanitized;
@@ -99,6 +101,7 @@ export class ContentSanitizer {
 
     // Remove null bytes and other dangerous control characters
     // Keep newlines, tabs, and carriage returns for formatting
+    // eslint-disable-next-line no-control-regex
     const sanitized = trimmed.replace(/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/g, '');
 
     return sanitized;

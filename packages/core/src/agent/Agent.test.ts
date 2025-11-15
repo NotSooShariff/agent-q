@@ -2,6 +2,8 @@
  * Agent utility tests
  */
 
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-argument */
+
 import { formatAgentMarkdown, parseAgentMarkdown, validateAgentConfig } from './Agent';
 import type { AgentConfig } from '../types/index';
 
