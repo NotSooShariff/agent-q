@@ -29,7 +29,7 @@ export * from './errors/index.js';
 // Types (excluding ValidationError to avoid conflict)
 export type {
   AgentScope,
-  ClaudeModel,
+  AIModel,
   AgentConfig,
   Agent,
   TemplateMetadata,

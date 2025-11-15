@@ -1,6 +1,6 @@
 {
   "name": "@agent-q/core",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Core business logic for Agent Q",
   "type": "module",
   "main": "./dist/index.js",

@@ -8,9 +8,9 @@
 export type AgentScope = 'project' | 'user';
 
 /**
- * Supported Claude models
+ * Supported AI models
  */
-export type ClaudeModel = 'sonnet' | 'opus' | 'haiku';
+export type AIModel = 'sonnet' | 'opus' | 'haiku';
 
 /**
  * Agent configuration interface
@@ -31,8 +31,8 @@ export interface AgentConfig {
   /** Tools the agent can use (undefined = all tools) */
   tools?: string[];
 
-  /** Claude model to use */
-  model?: ClaudeModel;
+  /** AI model to use */
+  model?: AIModel;
 
   /** Storage scope */
   scope: AgentScope;
@@ -131,7 +131,7 @@ export interface Template {
 
   /** Compatibility requirements */
   compatibility: {
-    minClaudeCodeVersion: string;
+    minVersion: string;
     platforms: string[];
   };
 

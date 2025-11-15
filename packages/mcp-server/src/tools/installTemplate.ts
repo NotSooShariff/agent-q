@@ -98,7 +98,7 @@ Use the search_templates tool to see all available templates.`,
 
 📝 Description: ${template.metadata.description}
 
-The agent is ready to use! Claude Code will automatically invoke it when appropriate.`,
+The agent is ready to use and will be automatically invoked when appropriate.`,
       },
     ],
   };

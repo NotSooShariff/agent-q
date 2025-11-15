@@ -41,7 +41,7 @@ export const VALIDATE_AGENT_SCHEMA: Tool = {
       model: {
         type: 'string',
         enum: ['sonnet', 'opus', 'haiku'],
-        description: 'Claude model',
+        description: 'AI model',
       },
       expertise: {
         type: 'array',

@@ -46,7 +46,7 @@ Feature requests are welcome! Please provide:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/agent-q.git
+git clone https://github.com/NotSooShariff/agent-q.git
 cd agent-q
 
 # Install dependencies

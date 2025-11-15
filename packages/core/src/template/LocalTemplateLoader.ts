@@ -96,7 +96,7 @@ export class LocalTemplateLoader {
           version: '1.0.0',
         },
         compatibility: {
-          minClaudeCodeVersion: '1.0.0',
+          minVersion: '1.0.0',
           platforms: ['darwin', 'linux', 'win32'],
         },
         agent: agentConfig,

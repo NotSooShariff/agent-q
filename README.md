@@ -10,6 +10,8 @@
 
 Agent Q is a Model Context Protocol (MCP) server that enables you to create, manage, and organize specialized AI agents for any MCP-compatible AI tool. With 120+ pre-built agent templates covering everything from code review to DevOps, Agent Q helps you streamline your AI workflows.
 
+> **Note on Compatibility**: Agent Q is built on the open MCP standard and aims to work with all MCP-compatible tools. However, it has been primarily developed and tested with **Claude Code**. We're actively seeking contributors to help test and improve compatibility with other MCP clients like Cursor, Cline, and others. If you'd like to contribute, please see our [Contributing Guidelines](./CONTRIBUTING.md).
+
 ### Key Features
 
 - **120+ Agent Templates** - Pre-configured specialists ready to use
@@ -390,7 +392,18 @@ pnpm clean          # Clean build artifacts
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+We welcome contributions! Agent Q is open-source and community-driven.
+
+### Priority Areas
+
+We're especially looking for help with:
+
+1. **MCP Client Compatibility**: Testing and improving support for Cursor, Cline, Windsurf, and other MCP clients
+2. **Agent Templates**: Adding new specialized agent templates for different domains
+3. **Documentation**: Improving setup guides and troubleshooting for various tools
+4. **Bug Reports**: Testing on different platforms and reporting issues
+
+Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
 ### Adding New Templates
 

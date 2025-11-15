@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2025-01-15
+
+### Changed
+- Generalized all platform-specific references to support broader MCP ecosystem
+- Renamed `ClaudeModel` type to `AIModel` for platform neutrality
+- Updated all tool descriptions and messages to be MCP-client agnostic
+- Removed platform-specific plugin packages
+- Updated compatibility fields to be more generic (`minVersion` instead of `minClaudeCodeVersion`)
+
+### Removed
+- Platform-specific internal documentation files
+- Claude-specific attributions and references throughout codebase
+
 ## [0.1.0] - 2025-01-07
 
 ### Added
@@ -52,7 +65,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Distribution
 - npm package (@agent-q/mcp)
-- Claude Code plugin bundle
 - Multi-platform support (macOS, Linux, Windows)
 
 ### Security
@@ -62,5 +74,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - File permission verification
 - Audit logging infrastructure
 
-[Unreleased]: https://github.com/yourusername/agent-q/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/yourusername/agent-q/releases/tag/v0.1.0
+[Unreleased]: https://github.com/NotSooShariff/agent-q/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/NotSooShariff/agent-q/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/NotSooShariff/agent-q/releases/tag/v0.1.0

@@ -8,7 +8,7 @@ import type { Tool } from '@modelcontextprotocol/sdk/types.js';
 export const CREATE_AGENT_SCHEMA: Tool = {
   name: 'create_agent',
   description:
-    'Create a new Claude Code agent with custom personality and behavior. The agent will be saved as a markdown file and can be automatically invoked by Claude Code based on its description.',
+    'Create a new AI agent with custom personality and behavior. The agent will be saved as a markdown file and can be automatically invoked based on its description.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -21,7 +21,7 @@ export const CREATE_AGENT_SCHEMA: Tool = {
       description: {
         type: 'string',
         description:
-          'Brief description of when to use this agent (max 200 chars). Claude Code uses this to decide when to invoke the agent. Example: "Reviews code for security vulnerabilities and best practices"',
+          'Brief description of when to use this agent (max 200 chars). Your AI assistant uses this to decide when to invoke the agent. Example: "Reviews code for security vulnerabilities and best practices"',
         maxLength: 200,
       },
       personality: {
@@ -51,7 +51,7 @@ export const CREATE_AGENT_SCHEMA: Tool = {
       model: {
         type: 'string',
         enum: ['sonnet', 'opus', 'haiku'],
-        description: 'Optional: Claude model to use. Defaults to sonnet.',
+        description: 'Optional: AI model to use. Defaults to sonnet.',
       },
       expertise: {
         type: 'array',
@@ -98,10 +98,10 @@ export async function createAgentTool(
 🤖 Model: ${agent.config.model || 'sonnet'}
 🔧 Tools: ${agent.config.tools ? agent.config.tools.join(', ') : 'all tools'}
 
-The agent is now available and Claude Code will automatically invoke it based on the description:
+The agent is now available and will be automatically invoked based on the description:
 "${agent.config.description}"
 
-You may need to reload Claude Code to see the agent in action.`,
+You may need to reload your MCP client to see the agent in action.`,
       },
     ],
   };

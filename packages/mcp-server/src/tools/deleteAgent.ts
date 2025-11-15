@@ -45,7 +45,7 @@ export async function deleteAgentTool(
 
 The agent has been permanently removed from ${typedArgs.scope} scope.
 
-You may need to reload Claude Code to reflect this change.`,
+You may need to reload your MCP client to reflect this change.`,
       },
     ],
   };

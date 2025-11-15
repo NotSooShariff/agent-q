@@ -2,7 +2,7 @@
  * Agent model and utilities
  */
 
-import type { Agent, AgentConfig, ClaudeModel } from '../types/index.js';
+import type { Agent, AgentConfig, AIModel } from '../types/index.js';
 
 /**
  * Format agent configuration as Markdown with YAML frontmatter
@@ -78,7 +78,7 @@ export function parseAgentMarkdown(content: string): Omit<AgentConfig, 'scope'> 
         config.tools = value.split(',').map((t) => t.trim());
         break;
       case 'model':
-        config.model = value as ClaudeModel;
+        config.model = value as AIModel;
         break;
     }
   }

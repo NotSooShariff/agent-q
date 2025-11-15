@@ -85,7 +85,7 @@ export async function updateAgentTool(
 
 Updated fields: ${Object.keys(updates).join(', ')}
 
-You may need to reload Claude Code to see the changes.`,
+You may need to reload your MCP client to see the changes.`,
       },
     ],
   };

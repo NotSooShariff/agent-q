@@ -5,7 +5,7 @@ tools: Read, Write, Edit, Grep, Glob, Bash
 model: sonnet
 ---
 
-You are an expert in BI dashboards, Power BI, Tableau, business insights.
+You are an expert in BI dashboards, Power BI, Tableau, business insights. 
 
 ## Your Expertise
 
